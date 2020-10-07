@@ -1,0 +1,70 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer{
+    background-color: #e41b23;
+}
+
+.copyright{
+    color: #495057;
+    font-size: 2px;
+    margin:0;
+    text-align: right;
+    float: right;
+}
+
+.footer .logo2{
+    width: 5%;
+    margin-left: 10px;
+    float: left;
+}
+.footer .list-group{
+    padding-top: 10px;
+    list-style-type: none;
+    color: white;
+    font-size: 14px;
+}
+.footer .list-group .local{
+    text-decoration: none;
+    color: aliceblue;
+}
+.footer .list-group .local:hover{
+    color: rgb(182, 182, 182);
+}
+
+.footer .foto1{
+    width: 7%;
+    height: 40px;
+    margin-left: 35%;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+}
+ 
+.footer .foto2{
+    width: 7%;
+    height: 40px;
+    margin-left: 1%;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+}
+.footer .foto3{
+    width: 7%;
+    height:40px;
+    margin-left: 1%;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-bottom: 1%;
+}
+
+.footer .link{
+    text-decoration: none;
+}
+.footer .link:hover{
+    opacity: 0.7;
+}

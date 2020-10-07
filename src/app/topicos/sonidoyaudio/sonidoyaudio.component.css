@@ -1,0 +1,129 @@
+.Sonidos{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 60px;
+}
+
+.boton{
+    position: relative;
+    margin-top: 3px;
+    margin-left: 6%;
+    margin-bottom: 10px;
+    background-color: #ffffff70;
+    color: black;
+}
+.boton:hover{
+    background-color: #ffffff96;
+    color: black;
+    font-weight: bold;
+
+}
+
+.agregar{
+    margin-top: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.2px;
+    padding-left:40px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+.etiqueta{
+    font-size: 50px;
+    color: #fafafa;
+    background: #f8f0f07e;
+    text-shadow: 3px 2px 0px #7A7A7A;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+.Sonidito{
+    background: rgb(189,0,132);
+    background: linear-gradient(0deg, rgba(189,0,132,1) 0%, rgba(236,93,194,1) 13%, rgba(232,183,217,1) 22%, rgba(233,223,230,1) 33%, rgba(232,209,224,1) 42%, rgba(232,209,224,1) 50%, rgba(137,209,231,1) 63%, rgba(104,209,233,1) 68%, rgba(89,189,212,1) 77%, rgba(0,178,207,1) 84%, rgba(10,144,166,1) 94%, rgba(1,123,143,1) 100%);
+}
+
+
+.nombre{
+    font-weight: bolder;
+}
+.getTema{
+    font-style: italic;
+}
+
+.detalle{
+    background-color: #292b2c85;
+    color: rgba(255, 255, 255, 0.549);
+    font-weight: bold;
+}
+.detalle:hover{
+    background-color: #292b2cbf;
+    color: rgba(255, 255, 255, 0.816);
+    font-weight: bolder;
+}
+
+.foro {
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+}
+
+.user{
+    float: right;
+    font-style: italic;
+    color: rgb(157, 155, 157);
+    margin-right: 15;
+}
+
+.formulario{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.modal-title{
+    margin-left: 20px;
+}
+
+hr{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h5{
+    font-style: italic;
+}
+.carta{
+    width: 80%; 
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.cartaCom{
+    background-color: rgba(214, 207, 214, 0.309);
+}
+
+.borrarBoton{
+    padding:7px, 3px;
+    border-radius: 50%;
+}
+
+.p1{
+    text-align: center; 
+    color: darkgrey; 
+    font-style: italic;
+}
+
+.p2{
+    text-align: justify;
+}
+
+.createForo{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.cartaForo{
+    background-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,95 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-2 col-lg-4 bg-image"></div>
+    <div class="col-md-5 col-lg-8 fondo">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">¡Únete a la comunidad de Kidac!</h3>
+              <form>
+                <div class="form-label-group">
+                  <label for="inputNombre"> Nombre</label>
+                  <input type="text" class="form-control" id="inputNombre" placeholder="María" [(ngModel)]="nombre"
+                    name="nombre" required autofocus>
+                </div>
+
+                <div class="form-label-group">
+                  <label for="inputApellido"> Apellido Paterno</label>
+                  <input type="text" class="form-control" id="inputApellidoP" placeholder="Pérez"
+                    [(ngModel)]="apellidoP" name="apellidoP" required>
+                </div>
+
+                <div class="form-label-group">
+                  <label for="inputApellido"> Apellido Materno</label>
+                  <input type="text" class="form-control" id="inputApellidoM" placeholder="Rodríguez"
+                    [(ngModel)]="apellidoM" name="apellidoM" required>
+                </div>
+
+                <div class="form-label-group">
+                  <label for="inputGenero">Genero</label>
+                  <select id="inputGenero" class="form-control" [(ngModel)]="genero" name="genero">
+                    <option selected>Seleccionar</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="otro">Otro</option>
+                    <option value="none">Prefiero no decir</option>
+                  </select>
+                </div>
+                <div class="form-label-group">
+                  <label for="inputDate"> Fecha de Nacimiento</label>
+                  <input type="date" class="form-control" id="inputDate" [(ngModel)]="fecha" name="fecha">
+                </div>
+                <div class="form-label-group">
+                  <label for="inputUsername"> Username</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="mariaperez"
+                    [(ngModel)]="username" name="username" required>
+                </div>
+                <div class="form-label-group">
+                  <label for="inputEmail4"> Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@example.com"
+                    [(ngModel)]="correo" name="correo" required>
+                </div>
+                <div class="form-label-group">
+                  <label for="inputPassword4"> Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Abc1234"
+                    [(ngModel)]="password" name="password" required>
+                </div>
+
+                <div class="form-label-group">
+                  <label for="inputRegion">Region</label>
+                  <select id="inputRegion" class="form-control" (change)="buscarComuna($event.target.value)"
+                    [(ngModel)]="region" name="regiones">
+                    <option selected>Seleccionar</option>
+                    <option *ngFor="let regiones of regionList" [value]="regiones.idRegion">{{regiones.nombreRegion}}
+                    </option>
+                  </select>
+                </div>
+                <div class="form-label-group">
+                  <label for="inputComuna">Comuna</label>
+                  <select id="inputComuna" class="form-control" [(ngModel)]="comuna" name="comu">
+                    <option selected>Seleccionar</option>
+                    <option *ngFor="let Comunas of comunasList" [value]="Comunas.idRegion">{{Comunas.nombreComuna}}
+                    </option>
+                  </select>
+                </div>
+                <br>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" [(ngModel)]="check"
+                    name="check">
+                  <label class="custom-control-label" for="customCheck1">Aceptar <a href="#">Términos y
+                      Condiciones</a></label>
+                </div>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                  type="submit" (click)="registro();">Regístrate</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

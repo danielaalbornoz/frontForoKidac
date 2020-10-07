@@ -1,0 +1,46 @@
+
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-2 col-lg-4 bg-image"></div>
+    <div class="col-md-5 col-lg-8 fondo">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-10 mx-auto">
+              <h3 class="login-heading mb-4">¡Bienvenido a la comunidad de Kidac!</h3>
+              <br>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Username" required autofocus [(ngModel)]="username" name="username">
+                  <label for="inputEmail">Usuario</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required [(ngModel)]="password" name="password">
+                  <label for="inputPassword">Contraseña</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Recordar Contraseña</label>
+                </div>
+                <div class="row">
+                  <div class="col-1 botonEntrar"></div>                  
+                  <div class="col-5">
+                    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" (click)="goRegister();">Regístrate</button>
+                  </div>
+                  
+                  <div class="col-5">
+                    <button class="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" (click)="login();">Kidéctate</button>
+                  </div>  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.todo{
+    padding-top: 87px;
+    background: rgb(245,222,179);
+    background: linear-gradient(0deg, rgba(245,222,179,1) 8%, rgba(213,181,120,1) 33%, rgba(190,158,97,1) 50%, rgba(213,181,120,1) 70%, rgba(245,222,179,1) 100%);
+    background-size: cover;
+}
+
+.username{
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.397);
+}
+

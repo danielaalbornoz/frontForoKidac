@@ -1,0 +1,131 @@
+.justificado{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 60px;
+}
+
+.boton{
+    position: relative;
+    margin-top: 3px;
+    margin-left: 6%;
+    margin-bottom: 10px;
+    background-color: #ffffff70;
+    color: black;
+}
+.boton:hover{
+    background-color: #ffffff96;
+    color: black;
+    font-weight: bold;
+
+}
+
+.agregar{
+    margin-top: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.2px;
+    padding-left:40px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+.etiqueta{
+    font-size: 50px;
+    color: #fafafa;
+    background: #f8f0f07e;
+    text-shadow: 3px 2px 0px #7A7A7A;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+.VideoJuego{
+    background: rgb(191,129,227);
+    background: linear-gradient(0deg, rgba(191,129,227,1) 5%, rgba(189,146,214,1) 11%, rgba(224,181,250,1) 40%, rgba(24,195,240,1) 87%, rgba(13,185,230,1) 92%, rgba(23,169,208,1) 97%);
+}
+
+.cartaForo{
+    background: rgba(76, 175, 80, 0.1);
+    text-shadow: 2px 2px 2px #CE5937;
+    font-size: medium;
+}
+
+.nombre{
+    font-weight: bolder;
+}
+.getTema{
+    font-style: italic;
+}
+
+.detalle{
+    background-color: #292b2c85;
+    color: rgba(255, 255, 255, 0.549);
+    font-weight: bold;
+}
+.detalle:hover{
+    background-color: #292b2cbf;
+    color: rgba(255, 255, 255, 0.816);
+    font-weight: bolder;
+}
+
+.foro {
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+}
+
+.user{
+    float: right;
+    font-style: italic;
+    color: rgb(157, 155, 157);
+    margin-right: 15;
+}
+
+.formulario{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.modal-title{
+    margin-left: 20px;
+}
+
+hr{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h5{
+    font-style: italic;
+}
+.carta{
+    width: 80%; 
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.cartaCom{
+    background-color: rgba(214, 207, 214, 0.309);
+}
+
+.borrarBoton{
+    padding:7px, 3px;
+    border-radius: 50%;
+}
+
+.p1{
+    text-align: center; 
+    color: darkgrey; 
+    font-style: italic;
+}
+
+.p2{
+    text-align: justify;
+}
+
+.createForo{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}

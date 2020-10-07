@@ -1,0 +1,142 @@
+<app-navbar></app-navbar>
+<div class="todo">
+    <div class="container">
+        <div class="row flex-lg-nowrap">
+            <div class="col-12 col-lg-auto mb-3" style="width: 200px;"></div>
+            <div class="col">
+                <div class="row">
+                    <div class="col mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="e-profile">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-auto mb-3"> </div>
+                                        <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                                            <div class="text-center text-sm-left mb-2 mb-sm-0">
+                                                <h2 class="pt-sm-2 pb-1 mb-0 text-nowrap">{{user.nombre}} {{user.apellidoP}}</h2>
+                                                <h4 class="mb-0 username">@{{user.username}}</h4>
+                                            </div>
+                                            <div class="text-center text-sm-right" *ngIf="isAdmin">
+                                                <span class="badge badge-secondary">ADMINISTRADOR</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item"><a href="" class="active nav-link">Configuración</a></li>
+                                    </ul>
+                                    <div class="tab-content pt-3">
+                                        <div class="tab-pane active">
+                                            <form class="form" novalidate="">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Nombre</label>
+                                                                    <input class="form-control" type="text" name="nombre"  [(ngModel)]='user.nombre'>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Username</label>
+                                                                    <input class="form-control" type="text" name="username" [(ngModel)]='user.username'>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Apellido Paterno</label>
+                                                                    <input class="form-control" type="text" name="apellidoP" [(ngModel)]='user.apellidoP'>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Apellido Materno</label>
+                                                                    <input class="form-control" type="text" name="apellidoM" [(ngModel)]='user.apellidoM'>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Genero </label>
+                                                                    <select id="inputGenero" class="form-control" name="genero" [(ngModel)]='user.genero'>
+                                                                        <option selected>Seleccionar</option>
+                                                                        <option value="mujer">Mujer</option>
+                                                                        <option value="hombre">Hombre</option>
+                                                                        <option value="otro">Otro</option>
+                                                                        <option value="none">Prefiero no decir</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Fecha de Nacimiento</label>
+                                                                    <input type="date" class="form-control" id="inputDate"  name="fecha" [(ngModel)]='user.fecha'>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Email</label>
+                                                                    <input class="form-control" type="text" [(ngModel)]='user.correo' name="correo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Región</label>
+                                                                    <select id="inputRegion" class="form-control" name="regiones" (change)="buscarComuna($event.target.value)" [(ngModel)]='user.region'>
+                                                                        <option selected>Seleccionar</option>
+                                                                        <option *ngFor="let regiones of regionList" [value]="regiones.idRegion">{{regiones.nombreRegion}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Comuna</label>
+                                                                    <select id="inputComuna" class="form-control" [(ngModel)]='user.comuna' name="comu">
+                                                                        <option selected>Seleccionar</option>
+                                                                        <option *ngFor="let Comunas of comunasList" [value]="Comunas.idComuna">{{Comunas.nombreComuna}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-2"><b>Cambiar Contraseña</b></div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label>Nueva Contraseña</label>
+                                                                    <input class="form-control" type="password" placeholder="••••••" [(ngModel)]='user.password' name="password">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col d-flex justify-content-end">
+                                                        <button class="btn btn-primary" type="button" (click)="editar();">Actualizar Datos</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

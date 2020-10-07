@@ -1,0 +1,390 @@
+.home{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,171,168,1) 35%, rgba(255,143,141,1) 60%, rgba(255,85,85,1) 83%, rgba(253,45,45,1) 100%);
+    background-size: cover;
+}
+
+.rules{
+    text-align: center;
+}
+
+.card-header{
+
+    font-size: 21px;
+}
+.card-text{
+    font-size: 17px;
+    font-style: oblique;
+    color: darkred;
+}
+.card.border-dark.mb-3{
+    margin-left: 40px;
+    border-radius: 15px;
+    background-color: rgb(229, 217, 192);
+    position: relative;
+    bottom: 1270px; left: 990px;
+    max-width: 17rem;
+    max-height: 40rem;
+}
+
+.accordion{
+    position: relative;
+    bottom: 600px;
+    left: 13%;
+    max-width: 60rem;
+    max-height: 30rem;
+    
+}
+.bot{
+    text-decoration: none;
+    color: cornsilk;
+    font-weight: bold;
+    opacity: 0.9;
+}
+.h{
+    border-radius: 30px;
+}
+.c1{
+    background-color: rgb(14, 14, 14);
+    
+    font-weight: bold;
+}
+.c2{
+    background: rgb(14, 14, 14);
+    background: linear-gradient(0deg,rgb(14, 14, 14) 0%, rgba(40,39,39,1) 23%, rgba(48,46,46,1) 49%, rgba(37,31,31,1) 83%, rgb(14, 14, 14) 100%);
+    color: cornsilk;
+    text-align: justify;
+}
+
+.justificado{
+    margin-left: 10.75%;
+    margin-right: 5%;
+    padding-top: 70px;
+}
+    
+.margen{
+    padding: 0px;
+}
+.btn1{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: lighter;
+    padding: 10px 20px;
+    background: #f7d288;  
+    font-size: 25px;  
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.btn1:hover{
+    animation: bounce 0.7s;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.imgFood{
+    width: 100%;
+    height: 370px;
+    background: url(../../../assets/img/comida/comidaasia.jpeg)
+    no-repeat center center/cover;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+.imgFood:hover{
+    opacity: 0.9;
+}
+
+/*ANIME*/
+
+.btn2{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: lighter;
+    padding: 10px 20px;
+    background: #ee6666;  
+    font-size: 25px;  
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.btn2:hover{
+    animation: bounce 0.7s;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.imgAnime{
+    width: 100%;
+    height: 400px;
+    background: url(../../../assets/img/anime/anime3.jpg)
+    no-repeat center center/cover;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+.imgAnime:hover{
+    opacity: 0.9;
+}
+
+/*CARROS*/
+
+.btn3{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: lighter;
+    padding: 10px 20px;
+    background: #b3d9ff;  
+    font-size: 25px;  
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.btn3:hover{
+    animation: bounce 0.7s;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.imgCarros{
+    width: 100%;
+    height: 400px;
+    background: url(../../../assets/img/carros/dodge.jpg)
+    no-repeat center center/cover;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+.imgCarros:hover{
+    opacity: 0.9;
+}
+
+/*SONIDO Y AUDIO*/
+
+.btn4{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: lighter;
+    padding: 10px 5px;
+    width: 100px;
+   background: #80E6FF;;  
+    font-size: 25px;  
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.btn4:hover{
+    animation: bounce 0.7s;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.imgAudio{
+    width: 100%;
+    height: 400px;
+    background: url(../../../assets/img/sonido/fondito.jpg)
+    no-repeat center center/cover;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+.imgAudio:hover{
+    opacity: 0.9;
+}
+
+/*SEGURIDAD SOCIAL*/
+
+.btn5{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: lighter;
+    padding: 10px 5px;
+    width: 115px;
+    background: #33c046;  
+    font-size: 20px;  
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.btn5:hover{
+    animation: bounce 0.7s;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.imgSegSoc{
+    width: 100%;
+    height: 400px;
+    background: url(../../../assets/img/prog/prog5.jpg)
+    no-repeat center center/cover;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+.imgSegSoc:hover{
+    opacity: 0.9;
+}
+
+/*PENDIENTE*/
+
+.btn6{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: lighter;
+    padding: 10px 5px;
+    width: 115px;
+    background: #993366;  
+    font-size: 25px;  
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.btn6:hover{
+    animation: bounce 0.7s;
+    opacity: 0.8
+;
+    font-style: italic;
+}
+
+.imgMillanti{
+    width: 100%;
+    height: 400px;
+    background: url(../../../assets/img/millanti/milla1.jpeg)
+    no-repeat center center/cover;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+.imgMillanti:hover{
+    opacity: 0.9;
+}
+.titul{
+    font-family: Georgia, serif;
+font-size: 50px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+font-style: italic;
+font-variant: small-caps;
+text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(206,89,55,0);
+}
+
+/************************************************************/
+.card{
+    text-justify: auto;
+    font-size: 13px;
+    box-sizing:border-box;
+}
+.cardMarg{
+    margin-left: 18px;
+}
+.link{
+    text-decoration: none;
+}
+.text{
+    position: relative;
+}
+.carta{
+    margin-left: 63%;
+    position: fixed;
+    top:200px;
+    padding-right: 0%;
+}
+

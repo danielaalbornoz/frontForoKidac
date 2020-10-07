@@ -1,0 +1,19 @@
+.justificado{
+    background: rgb(180,80,58);
+    background: linear-gradient(90deg, rgba(180,80,58,1) 0%, rgba(252,176,69,1) 100%);
+}
+
+.Tablas{
+
+    margin-top: 78px;
+    margin-left: 5%;
+    margin-right: 9%;
+}
+
+.lista{
+    text-align: center;
+}
+
+.baneo{
+    font-style: italic;
+}

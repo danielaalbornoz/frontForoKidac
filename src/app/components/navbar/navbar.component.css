@@ -1,0 +1,30 @@
+.btn.btn-primary.btn-lg-sm{
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: wheat;
+    color:#e41b23;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.7rem;
+}
+.btn.btn-primary.btn-lg-sm:hover{
+    font-weight: bold;
+}
+
+.hov{
+ font-size: 20px;   
+}
+.hov:hover{
+    font-weight: bolder;
+}
+
+.jover:hover{
+    font-style: italic;
+}
+
+.navbar-brand{
+ margin-left: 7%;
+}
